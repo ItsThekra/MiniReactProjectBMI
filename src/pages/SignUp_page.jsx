@@ -1,6 +1,7 @@
 import "../App"
 import React from 'react'
 import { useState } from "react"
+import BMI_page from "./BMI_page";
 
 
 function SignUp_page() {

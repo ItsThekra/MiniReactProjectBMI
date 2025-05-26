@@ -43,7 +43,7 @@ function SignUp_page() {
     if (Object.keys(validationErrors).length === 0) {
       localStorage.setItem("user", JSON.stringify(form));
       alert("Account created successfully!");
-      window.location.href = "/BMI_page";
+      window.location.href = "/bmi";
     }
   };
 

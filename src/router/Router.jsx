@@ -27,9 +27,9 @@ const router = createBrowserRouter([{
     children: [
     
         {path: "/" , element: <Home_page />},
-        {path: "BMI_page" , element: <BMI_page/>},
         {path: "About_page" , element: <About_page />},
         {path: "Login_Page" , element: <Login_page />},
+        {path: "BMI_page" , element: <BMI_page/>},
         {path: "SignUp_Page" , element: <SignUp_page />},
     ]
 }])

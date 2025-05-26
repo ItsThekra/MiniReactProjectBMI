@@ -19,7 +19,7 @@ function Login_page() {
       setError("Invalid email or password.");
     } else {
       alert("Login successful!");
-      navigate("/bmi"); // ✅ توجيه بعد تسجيل الدخول
+      navigate("/bmi"); 
     }
   };
 

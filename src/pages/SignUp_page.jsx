@@ -35,7 +35,7 @@ function SignUp_page() {
     if (Object.keys(validationErrors).length === 0) {
       localStorage.setItem("user", JSON.stringify(form));
       alert("Account created successfully!");
-      navigate("/bmi"); // ✅ توجيه بعد التسجيل
+      navigate("/bmi"); 
     }
   };
 

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import "../App"
 
 function BMI_page() {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [bmi, setBmi] = useState(null);
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState('');
 
   const calculateBMI = () => {
     if (height === 0) return;
@@ -12,10 +13,10 @@ function BMI_page() {
     const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(2);
     setBmi(bmiValue);
 
-    if (bmiValue < 18.5) setStatus("Underweight");
-    else if (bmiValue < 25) setStatus("Normal");
-    else if (bmiValue < 30) setStatus("Overweight");
-    else setStatus("Obese");
+    if (bmiValue < 18.5) setStatus('Underweight');
+    else if (bmiValue < 25) setStatus('Normal');
+    else if (bmiValue < 30) setStatus('Overweight');
+    else setStatus('Obese');
   };
 
   return (

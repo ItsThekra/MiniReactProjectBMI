@@ -11,33 +11,32 @@ import BMI_page from '../pages/BMI_page'
 import About_page from '../pages/About_page'
 
 
-function Layout(){
-    return(
-        <>
-        <Navbar_component />
-        <Outlet />
-        <Footer_component />
-        </>
-    )
+function Layout() {
+  return (
+    <>
+      <Navbar_component />
+      <Outlet />
+      <Footer_component />
+    </>
+  );
 }
 
-const router = createBrowserRouter([{
-    path: "/",
+const router = createBrowserRouter([
+  {
+    path: '/',
     element: <Layout />,
     children: [
-    
-        {path: "/" , element: <Home_page />},
-        {path: "About_page" , element: <About_page />},
-        {path: "Login_Page" , element: <Login_page />},
-        {path: "BMI_page" , element: <BMI_page/>},
-        {path: "SignUp_Page" , element: <SignUp_page />},
-    ]
-}])
+      { path: '/', element: <Home_page /> },
+      { path: 'about', element: <About_page /> },
+      { path: 'login', element: <Login_page /> },
+      { path: 'bmi', element: <BMI_page /> },
+      { path: 'signup', element: <SignUp_page /> },
+    ],
+  },
+]);
 
 function Router() {
-  return (
-    <RouterProvider  router = {router}/>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default Router
+export default Router;
